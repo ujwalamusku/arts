@@ -2,6 +2,33 @@
 
 You can use the [editor on GitHub](https://github.com/ujwalamusku/arts/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+
+
+<div id="observablehq-chart-830c0264"></div>
+<div id="observablehq-key-830c0264"></div>
+<div id="observablehq-viewof-LABFORCE_RADIO-830c0264"></div>
+<div id="observablehq-viewof-YEAR_RADIO-830c0264"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/7088fd3611f2b14a.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-830c0264"));
+  if (name === "key") return new Inspector(document.querySelector("#observablehq-key-830c0264"));
+  if (name === "viewof LABFORCE_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-LABFORCE_RADIO-830c0264"));
+  if (name === "viewof YEAR_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-YEAR_RADIO-830c0264"));
+});
+</script>
+
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
